@@ -1,4 +1,4 @@
--- GUI TIPO HACKER: TRADE FIND V2 BY CACAODEV
+
 local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
