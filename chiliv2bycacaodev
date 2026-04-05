@@ -1,0 +1,507 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Inject = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local TextBox = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local CloseBtn = Instance.new("TextButton")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.192402586, 0, 0.258333236, 0)
+MainFrame.Size = UDim2.new(0, 373, 0, 497)
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = MainFrame
+
+Inject.Name = "Inject"
+Inject.Parent = MainFrame
+Inject.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Inject.BackgroundTransparency = 1.000
+Inject.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inject.BorderSizePixel = 0
+Inject.Position = UDim2.new(0.231440574, 0, 0.0581564344, 0)
+Inject.Size = UDim2.new(0, 200, 0, 50)
+Inject.Font = Enum.Font.Unknown
+Inject.Text = "FindTrade"
+Inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inject.TextSize = 61.000
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.231445312, 0, 0.223010063, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Sistema desconectado..."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 31.000
+
+TextButton.Parent = MainFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 8)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0466249697, 0, 0.343129575, 0)
+TextButton.Size = UDim2.new(0, 334, 0, 50)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "Activar.."
+TextButton.TextColor3 = Color3.fromRGB(38, 84, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 28.000
+TextButton.TextWrapped = true
+
+UICorner_2.Parent = TextButton
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 28
+
+TextLabel_2.Name = ""
+TextLabel_2.Parent = MainFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.22876434, 0, 0.176459029, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "v2 by CacaoDev and bri_vroo\\n"
+TextLabel_2.TextColor3 = Color3.fromRGB(221, 255, 0)
+TextLabel_2.TextSize = 21.000
+
+TextButton_2.Parent = MainFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0466249697, 0, 0.465865999, 0)
+TextButton_2.Size = UDim2.new(0, 334, 0, 50)
+TextButton_2.Font = Enum.Font.Unknown
+TextButton_2.Text = "FreezeTrade"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 28.000
+TextButton_2.TextWrapped = true
+
+UICorner_3.Parent = TextButton_2
+
+UITextSizeConstraint_2.Parent = TextButton_2
+UITextSizeConstraint_2.MaxTextSize = 28
+
+TextButton_3.Parent = MainFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0466249697, 0, 0.588602424, 0)
+TextButton_3.Size = UDim2.new(0, 334, 0, 50)
+TextButton_3.Font = Enum.Font.Unknown
+TextButton_3.Text = "MacroForceAccept"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 28.000
+TextButton_3.TextWrapped = true
+
+UICorner_4.Parent = TextButton_3
+
+UITextSizeConstraint_3.Parent = TextButton_3
+UITextSizeConstraint_3.MaxTextSize = 28
+
+TextButton_4.Parent = MainFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.0466249697, 0, 0.709326744, 0)
+TextButton_4.Size = UDim2.new(0, 334, 0, 50)
+TextButton_4.Font = Enum.Font.Unknown
+TextButton_4.Text = "ForceBrainrots"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 28.000
+TextButton_4.TextWrapped = true
+
+UICorner_5.Parent = TextButton_4
+
+UITextSizeConstraint_4.Parent = TextButton_4
+UITextSizeConstraint_4.MaxTextSize = 28
+
+TextBox.Parent = MainFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0777479857, 0, 0.841046274, 0)
+TextBox.Size = UDim2.new(0, 309, 0, 50)
+TextBox.Font = Enum.Font.Unknown
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.PlaceholderText = "Para obtener ayuda unete https://discord.gg/EZ2jC6u4"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 15.000
+TextBox.TextWrapped = true
+
+UICorner_6.Parent = TextBox
+
+UITextSizeConstraint_5.Parent = TextBox
+UITextSizeConstraint_5.MaxTextSize = 15
+
+CloseBtn.Name = "CloseBtn"
+CloseBtn.Parent = MainFrame
+CloseBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseBtn.BackgroundTransparency = 1.000
+CloseBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseBtn.BorderSizePixel = 0
+CloseBtn.Position = UDim2.new(0.667560339, 0, -0.0120724346, 0)
+CloseBtn.Size = UDim2.new(0, 200, 0, 50)
+CloseBtn.Font = Enum.Font.Unknown
+CloseBtn.Text = "X"
+CloseBtn.TextColor3 = Color3.fromRGB(255, 0, 4)
+CloseBtn.TextScaled = true
+CloseBtn.TextSize = 40.000
+CloseBtn.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = CloseBtn
+UITextSizeConstraint_6.MaxTextSize = 40
+
+-- Scripts:
+
+local function BCTZOHS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local boton = script.Parent
+	local textoLabel = boton.Parent:WaitForChild("StatusLabel")
+	
+	-- Tamaño "Impactante" (22 es el punto exacto, pendejo)
+	local tamanoCabron = 22 
+	
+	local activado = false
+	
+	boton.MouseButton1Click:Connect(function()
+	    if not activado then
+	        activado = true
+	        
+	        -- --- MODO ACTIVADO (MATRIX HACKER) ---
+	        textoLabel.Text = "SISTEMA INYECTADO [CACAODEV]"
+	        textoLabel.TextSize = tamanoCabron
+	        textoLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+	        textoLabel.TextStrokeTransparency = 0.5 -- Un poquito de sombra para que resalte
+	        
+	        boton.Text = "DESACTIVAR"
+	        boton.TextSize = tamanoCabron
+	        boton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	        boton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	        
+	        print("¡Inyectando script de Cacaodev, cabrón!")
+	        
+	    else
+	        activado = false
+	        
+	        -- --- MODO DESACTIVADO (ERROR) ---
+	        textoLabel.Text = "SISTEMA FUERA DE LÍNEA"
+	        textoLabel.TextSize = tamanoCabron
+	        textoLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+	        textoLabel.TextStrokeTransparency = 0.8
+	        
+	        boton.Text = "ACTIVAR"
+	        boton.TextSize = tamanoCabron
+	        boton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	        boton.TextColor3 = Color3.fromRGB(255, 0, 0)
+	        
+	        print("Sistema abortado, pendejo.")
+	    end
+	end)
+end
+coroutine.wrap(BCTZOHS_fake_script)()
+local function ZGWFTM_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local boton = script.Parent
+	local textoLabel = boton.Parent:WaitForChild("TextLabel")
+	
+	-- Tamaño "Impactante" (22 es el punto exacto, pendejo)
+	local tamanoCabron = 22 
+	
+	local activado = false
+	
+	boton.MouseButton1Click:Connect(function()
+		if not activado then
+			activado = true
+	
+			-- --- MODO ACTIVADO (MATRIX HACKER) ---
+			textoLabel.Text = "SISTEMA INYECTADO [CACAODEV]"
+			textoLabel.TextSize = tamanoCabron
+			textoLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+			textoLabel.TextStrokeTransparency = 0.5 -- Un poquito de sombra para que resalte
+	
+			boton.Text = "DESACTIVAR"
+			boton.TextSize = tamanoCabron
+			boton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			boton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	
+			print("¡Inyectando script de Cacaodev, cabrón!")
+	
+		else
+			activado = false
+	
+			-- --- MODO DESACTIVADO (ERROR) ---
+			textoLabel.Text = "SISTEMA FUERA DE LÍNEA"
+			textoLabel.TextSize = tamanoCabron
+			textoLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+			textoLabel.TextStrokeTransparency = 0.8
+	
+			boton.Text = "ACTIVAR"
+			boton.TextSize = tamanoCabron
+			boton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			boton.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			print("Sistema abortado, pendejo.")
+		end
+	end)
+end
+coroutine.wrap(ZGWFTM_fake_script)()
+local function CHQK_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local objeto = script.Parent -- La caja de texto que va a brillar
+	local speed = 2 -- Entre más alto sea este número, más rápido cambia el color, pendejo
+	
+	while true do
+		for i = 0, 1, 0.005 do -- Este ciclo recorre todos los colores
+			-- Usamos i como el "Hue" (tono) para crear el arcoíris
+			local color = Color3.fromHSV(i, 1, 1) 
+	
+			-- Aquí eliges qué quieres que brille (el texto o el borde)
+			objeto.TextColor3 = color
+			-- objeto.BorderColor3 = color -- Descomenta esto si quieres que el borde también brille
+	
+			task.wait(0.05 / speed) -- Espera un poquito para que no explote tu PC
+		end
+	end
+end
+coroutine.wrap(CHQK_fake_script)()
+local function KKQH_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local boton = script.Parent
+	local textoLabel = boton.Parent:WaitForChild("TextLabel")
+	
+	-- Tamaño "Impactante" (22 es el punto exacto, pendejo)
+	local tamanoCabron = 22 
+	
+	local activado = false
+	
+	boton.MouseButton1Click:Connect(function()
+		if not activado then
+			activado = true
+	
+			-- --- MODO ACTIVADO (MATRIX HACKER) ---
+			textoLabel.Text = "SISTEMA INYECTADO [CACAODEV]"
+			textoLabel.TextSize = tamanoCabron
+			textoLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+			textoLabel.TextStrokeTransparency = 0.5 -- Un poquito de sombra para que resalte
+	
+			boton.Text = "DESACTIVAR"
+			boton.TextSize = tamanoCabron
+			boton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			boton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	
+			print("¡Inyectando script de Cacaodev, cabrón!")
+	
+		else
+			activado = false
+	
+			-- --- MODO DESACTIVADO (ERROR) ---
+			textoLabel.Text = "SISTEMA FUERA DE LÍNEA"
+			textoLabel.TextSize = tamanoCabron
+			textoLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+			textoLabel.TextStrokeTransparency = 0.8
+	
+			boton.Text = "ACTIVAR"
+			boton.TextSize = tamanoCabron
+			boton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			boton.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			print("Sistema abortado, pendejo.")
+		end
+	end)
+end
+coroutine.wrap(KKQH_fake_script)()
+local function JVFXGE_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local objeto = script.Parent -- La caja de texto que va a brillar
+	local speed = 2 -- Entre más alto sea este número, más rápido cambia el color, pendejo
+	
+	while true do
+		for i = 0, 1, 0.005 do -- Este ciclo recorre todos los colores
+			-- Usamos i como el "Hue" (tono) para crear el arcoíris
+			local color = Color3.fromHSV(i, 1, 1) 
+	
+			-- Aquí eliges qué quieres que brille (el texto o el borde)
+			objeto.TextColor3 = color
+			-- objeto.BorderColor3 = color -- Descomenta esto si quieres que el borde también brille
+	
+			task.wait(0.05 / speed) -- Espera un poquito para que no explote tu PC
+		end
+	end
+end
+coroutine.wrap(JVFXGE_fake_script)()
+local function SDTZ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local boton = script.Parent
+	local textoLabel = boton.Parent:WaitForChild("TextLabel")
+	
+	-- Tamaño "Impactante" (22 es el punto exacto, pendejo)
+	local tamanoCabron = 22 
+	
+	local activado = false
+	
+	boton.MouseButton1Click:Connect(function()
+		if not activado then
+			activado = true
+	
+			-- --- MODO ACTIVADO (MATRIX HACKER) ---
+			textoLabel.Text = "SISTEMA INYECTADO [CACAODEV]"
+			textoLabel.TextSize = tamanoCabron
+			textoLabel.TextColor3 = Color3.fromRGB(0, 255, 0)
+			textoLabel.TextStrokeTransparency = 0.5 -- Un poquito de sombra para que resalte
+	
+			boton.Text = "DESACTIVAR"
+			boton.TextSize = tamanoCabron
+			boton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+			boton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	
+			print("¡Inyectando script de Cacaodev, cabrón!")
+	
+		else
+			activado = false
+	
+			-- --- MODO DESACTIVADO (ERROR) ---
+			textoLabel.Text = "SISTEMA FUERA DE LÍNEA"
+			textoLabel.TextSize = tamanoCabron
+			textoLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+			textoLabel.TextStrokeTransparency = 0.8
+	
+			boton.Text = "ACTIVAR"
+			boton.TextSize = tamanoCabron
+			boton.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+			boton.TextColor3 = Color3.fromRGB(255, 0, 0)
+	
+			print("Sistema abortado, pendejo.")
+		end
+	end)
+end
+coroutine.wrap(SDTZ_fake_script)()
+local function NUVBJ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local objeto = script.Parent -- La caja de texto que va a brillar
+	local speed = 2 -- Entre más alto sea este número, más rápido cambia el color, pendejo
+	
+	while true do
+		for i = 0, 1, 0.005 do -- Este ciclo recorre todos los colores
+			-- Usamos i como el "Hue" (tono) para crear el arcoíris
+			local color = Color3.fromHSV(i, 1, 1) 
+	
+			-- Aquí eliges qué quieres que brille (el texto o el borde)
+			objeto.TextColor3 = color
+			-- objeto.BorderColor3 = color -- Descomenta esto si quieres que el borde también brille
+	
+			task.wait(0.05 / speed) -- Espera un poquito para que no explote tu PC
+		end
+	end
+end
+coroutine.wrap(NUVBJ_fake_script)()
+local function ROAGCHW_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local frame = script.Parent -- Tu ventana principal, cabrón
+	
+	-- 1. SISTEMA DE MOVIMIENTO (DRAGGABLE)
+	local dragging, dragInput, dragStart, startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then dragging = false end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then update(input) end
+	end)
+	
+	-- 2. BOTÓN DE CERRAR (X)
+	local CloseBtn = frame:WaitForChild("CloseBtn") -- Crea un botón llamado CloseBtn
+	CloseBtn.MouseButton1Click:Connect(function()
+		frame.Parent:Destroy() -- Borra todo el GUI, alv
+		print("GUI Cerrado por Cacaodev")
+	end)
+	
+	-- 3. BOTÓN DE MINIMIZAR (-)
+	local MinimizeBtn = frame:WaitForChild("MinBtn") -- Crea un botón llamado MinBtn
+	local Content = frame:WaitForChild("ContentFrame") -- Mete tus botones aquí adentro
+	local minimizado = false
+	
+	MinimizeBtn.MouseButton1Click:Connect(function()
+		if not minimizado then
+			minimizado = true
+			Content.Visible = false
+			frame:TweenSize(UDim2.new(0, 250, 0, 30), "Out", "Quart", 0.3, true) -- Se encoge
+			MinimizeBtn.Text = "+"
+		else
+			minimizado = false
+			frame:TweenSize(UDim2.new(0, 250, 0, 150), "Out", "Quart", 0.3, true) -- Se agranda
+			task.wait(0.3)
+			Content.Visible = true
+			MinimizeBtn.Text = "-"
+		end
+	end)
+end
+coroutine.wrap(ROAGCHW_fake_script)()
